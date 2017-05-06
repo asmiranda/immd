@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/UCMAService/UCMAService.iml" filepath="$PROJECT_DIR$/UCMAService/UCMAService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auth/auth.iml" filepath="$PROJECT_DIR$/auth/auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/immd.iml" filepath="$PROJECT_DIR$/immd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microServiceLB/microServiceLB.iml" filepath="$PROJECT_DIR$/microServiceLB/microServiceLB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microServiceSingle/microServiceSingle.iml" filepath="$PROJECT_DIR$/microServiceSingle/microServiceSingle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/registry/registry.iml" filepath="$PROJECT_DIR$/registry/registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sampleUI/sampleUI.iml" filepath="$PROJECT_DIR$/sampleUI/sampleUI.iml" />
+    </modules>
+  </component>
+</project>

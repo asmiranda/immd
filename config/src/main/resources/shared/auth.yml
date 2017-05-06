@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: auth
+security:
+  user:
+    password: password
+  oauth2:
+    client:
+      client-id: demo
+      client-secret: demo
+      scope: read, write
+      auto-approve-scopes: .*
+    authorization:
+      check-token-access: permitAll()
+server:
+  port: 9999
+  context-path: /uaa
+logging:
+  level:
+    org.springframework.security: DEBUG
+
+immd:
+  ucma-service-endpoint: http://localhost:8083/ws

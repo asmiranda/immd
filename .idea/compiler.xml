@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="auth" />
+        <module name="config" />
+        <module name="gateway" />
+        <module name="microServiceLB" />
+        <module name="microServiceSingle" />
+        <module name="registry" />
+        <module name="sampleUI" />
+        <module name="UCMAService" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="auth" target="1.8" />
+      <module name="config" target="1.8" />
+      <module name="gateway" target="1.8" />
+      <module name="immd" target="1.5" />
+      <module name="microServiceLB" target="1.8" />
+      <module name="microServiceSingle" target="1.8" />
+      <module name="registry" target="1.8" />
+      <module name="sampleUI" target="1.8" />
+      <module name="UCMAService" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

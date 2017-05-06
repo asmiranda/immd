@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: single-service
+server:
+  port: 8800
+lb-service:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:8090,localhost:9092,localhost:9999
+    ServerListRefreshInterval: 15000
