@@ -54,6 +54,9 @@ public class AuthApplication extends WebMvcConfigurerAdapter {
         @Autowired
         private AuthenticationManager authenticationManager;
 
+        @Autowired
+        private UCMAAuthenticationProviderImpl authenticationProvider;
+
         @Override
         protected void configure(HttpSecurity http) throws Exception {
             http
@@ -69,6 +72,7 @@ public class AuthApplication extends WebMvcConfigurerAdapter {
         @Override
         protected void configure(AuthenticationManagerBuilder auth) throws Exception {
             auth.parentAuthenticationManager(authenticationManager);
+            auth.authenticationProvider(authenticationProvider);
         }
     }
 

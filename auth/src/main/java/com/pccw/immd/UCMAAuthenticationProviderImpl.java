@@ -16,30 +16,30 @@ import org.springframework.stereotype.Component;
  * Created by aiam on 5/6/2017.
  */
 @Component
-public class UCMAAuthenticationProviderImpl {
-//    public class UCMAAuthenticationProviderImpl implements AuthenticationProvider {
+//public class UCMAAuthenticationProviderImpl {
+    public class UCMAAuthenticationProviderImpl implements AuthenticationProvider {
 
     public static final Logger logger = LoggerFactory.getLogger(UCMAAuthenticationProviderImpl.class);
 
     @Autowired
     UCMAClient ucmaClient;
-//
-//    @Override
-//    public Authentication authenticate(Authentication authentication) throws AuthenticationException {
-//        String username = authentication.getPrincipal() + "";
-//        String password = authentication.getCredentials() + "";
-//        User user;
-//        try{
-//            user = ucmaClient.login(username,password);
-//        } catch (Exception e) { //TODO catch soap exception
-//            e.printStackTrace();
-//            throw new BadCredentialsException("Invalid Credentials");
-//        }
-//        return new UsernamePasswordAuthenticationToken(username, password,user.getAuthorities());
-//    }
-//
-//    @Override
-//    public boolean supports(Class<?> aClass) {
-//        return true;
-//    }
+
+    @Override
+    public Authentication authenticate(Authentication authentication) throws AuthenticationException {
+        String username = authentication.getPrincipal() + "";
+        String password = authentication.getCredentials() + "";
+        User user;
+        try{
+            user = ucmaClient.login(username,password);
+        } catch (Exception e) { //TODO catch soap exception
+            e.printStackTrace();
+            throw new BadCredentialsException("Invalid Credentials");
+        }
+        return new UsernamePasswordAuthenticationToken(username, password,user.getAuthorities());
+    }
+
+    @Override
+    public boolean supports(Class<?> aClass) {
+        return true;
+    }
 }
