@@ -1,0 +1,17 @@
+server:
+  port: 8083
+
+spring:
+  data:
+    mongodb:
+      host: localhost # Mongo server host. Cannot be set with uri.
+      port: 27017 # Mongo server port. Cannot be set with uri.
+      database: ucma # Database name.
+#      repositories:
+#        enabled: true # Enable Mongo repositories.
+
+logging:
+  level:
+    org.springframework.web: ERROR
+    com.jvaldenor: DEBUG
+  file: logs/application.log
